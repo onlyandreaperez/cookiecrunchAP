@@ -68,7 +68,6 @@ class GameViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
     // Configure the view
     let skView = view as! SKView
     skView.isMultipleTouchEnabled = false
@@ -84,6 +83,7 @@ class GameViewController: UIViewController {
     
     // Present the scene.
     skView.presentScene(scene)
+    scene.addTiles()
     
     beginGame()
   }
